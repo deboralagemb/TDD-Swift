@@ -2,7 +2,7 @@
 Repositório para praticar o curso de Test-Driven Development em Swift.
 
 Nesses estudos, serão explorados também:
-  - a arquitetura Clean (https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html), 
+  - a arquitetura Clean (https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
   - diferentes design patterns 
       - Adapter https://theswiftdev.com/swift-adapter-design-pattern/
       - Composite https://www.raywenderlich.com/books/design-patterns-by-tutorials/v3.0/chapters/20-composite-pattern, 
