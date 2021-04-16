@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D50382C0262A0CBB0089F448 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50382BF262A0CBB0089F448 /* Model.swift */; };
 		D5CA27562628B8D6000F211F /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA27552628B8D6000F211F /* AddAccount.swift */; };
 		D5CA27592628BA3F000F211F /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA27582628BA3F000F211F /* AccountModel.swift */; };
 		D5CA27692628BA95000F211F /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CA27602628BA95000F211F /* Data.framework */; };
@@ -47,6 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D50382BF262A0CBB0089F448 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		D5CA274B2628B86B000F211F /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CA274E2628B86B000F211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5CA27552628B8D6000F211F /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			children = (
 				D5CA27552628B8D6000F211F /* AddAccount.swift */,
 				D5CA27582628BA3F000F211F /* AccountModel.swift */,
+				D50382BF262A0CBB0089F448 /* Model.swift */,
 				D5CA274E2628B86B000F211F /* Info.plist */,
 			);
 			path = Domain;
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50382C0262A0CBB0089F448 /* Model.swift in Sources */,
 				D5CA27562628B8D6000F211F /* AddAccount.swift in Sources */,
 				D5CA27592628BA3F000F211F /* AccountModel.swift in Sources */,
 			);
