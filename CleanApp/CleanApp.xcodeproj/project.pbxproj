@@ -19,6 +19,10 @@
 		D5CA277E2628BAD1000F211F /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CA274B2628B86B000F211F /* Domain.framework */; };
 		D5CA277F2628BAD1000F211F /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5CA274B2628B86B000F211F /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D5D2966C263794380094896F /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D2966B263794380094896F /* ExtensionHelpers.swift */; };
+		D5D2967526379E500094896F /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D2967426379E500094896F /* TestExtensions.swift */; };
+		D5D2967B26379FA60094896F /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D2967A26379FA60094896F /* TestFactories.swift */; };
+		D5D2968026379FEA0094896F /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D2967F26379FEA0094896F /* HttpClientSpy.swift */; };
+		D5D296862637A02D0094896F /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D296852637A02D0094896F /* AccountModelFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		D5CA276D2628BA95000F211F /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
 		D5CA276F2628BA95000F211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5D2966B263794380094896F /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
+		D5D2967426379E500094896F /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
+		D5D2967A26379FA60094896F /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
+		D5D2967F26379FEA0094896F /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
+		D5D296852637A02D0094896F /* AccountModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModelFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +201,9 @@
 		D5CA276C2628BA95000F211F /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
+				D5D2967326379E3C0094896F /* Helpers */,
 				D50382D1262A0E060089F448 /* UseCases */,
+				D5D2967E26379FD70094896F /* Http */,
 				D5CA276F2628BA95000F211F /* Info.plist */,
 			);
 			path = DataTests;
@@ -212,6 +222,24 @@
 				D5D2966B263794380094896F /* ExtensionHelpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D5D2967326379E3C0094896F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D5D2967426379E500094896F /* TestExtensions.swift */,
+				D5D2967A26379FA60094896F /* TestFactories.swift */,
+				D5D296852637A02D0094896F /* AccountModelFactory.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D5D2967E26379FD70094896F /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				D5D2967F26379FEA0094896F /* HttpClientSpy.swift */,
+			);
+			path = Http;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,7 +411,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5D2967B26379FA60094896F /* TestFactories.swift in Sources */,
+				D5D2968026379FEA0094896F /* HttpClientSpy.swift in Sources */,
 				D5CA276E2628BA95000F211F /* RemoteAddAccountTests.swift in Sources */,
+				D5D296862637A02D0094896F /* AccountModelFactory.swift in Sources */,
+				D5D2967526379E500094896F /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
