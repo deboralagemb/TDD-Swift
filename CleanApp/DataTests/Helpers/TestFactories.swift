@@ -15,6 +15,10 @@ func makeValidData() -> Data {
     return Data("{\"name\":\"Debora\"}".utf8)
 }
 
+func makeEmptyData() -> Data {
+    return Data()
+}
+
 func makeURL() -> URL {
     return URL(string: "http://any-url.com")!
 }
@@ -24,5 +28,5 @@ func makeError() -> Error {
 }
 
 func makeHttpResponse(statusCode: Int = 200) -> HTTPURLResponse {
-    return HTTPURLResponse(url: makeURL(), statusCode: 200, httpVersion: nil, headerFields: nil)!
+    return HTTPURLResponse(url: makeURL(), statusCode: statusCode, httpVersion: nil, headerFields: nil)!
 }
