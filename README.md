@@ -9,3 +9,4 @@ Nesses estudos, serão explorados também:
       - Decorator https://medium.com/jeremy-codes/decorator-pattern-in-swift-e5fa11ea3c3f
   - SOLID (princípios da programação orientada a objetos e design de código identificados por Robert C)
   - MVP
+  - Swift package dependencies
