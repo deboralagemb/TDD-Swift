@@ -22,3 +22,7 @@ func makeURL() -> URL {
 func makeError() -> Error {
     return NSError(domain: "any_error", code: 0)
 }
+
+func makeHttpResponse(statusCode: Int = 200) -> HTTPURLResponse {
+    return HTTPURLResponse(url: makeURL(), statusCode: 200, httpVersion: nil, headerFields: nil)!
+}
