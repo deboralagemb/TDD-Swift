@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CI.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>Data.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,44 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>UseCasesIntegrationTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D58C8F2B2642E2610095D9D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5CA274A2628B86B000F211F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5CA275F2628BA95000F211F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5CA27672628BA95000F211F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5DC98B7263C3ED400C736F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5DC98BF263C3ED400C736F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
