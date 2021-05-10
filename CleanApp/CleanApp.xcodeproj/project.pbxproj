@@ -13,7 +13,7 @@
 		D50382D6262A12880089F448 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50382D5262A12880089F448 /* DomainError.swift */; };
 		D50382DC262A16D90089F448 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50382DB262A16D90089F448 /* HttpError.swift */; };
 		D51F94422648B6A9001B6EE4 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F94392648B6A8001B6EE4 /* Presentation.framework */; };
-		D51F94472648B6A9001B6EE4 /* PresentationPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F94462648B6A9001B6EE4 /* PresentationPresenterTests.swift */; };
+		D51F94472648B6A9001B6EE4 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F94462648B6A9001B6EE4 /* SignUpPresenterTests.swift */; };
 		D58C8F232641DD6B0095D9D8 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F222641DD6B0095D9D8 /* AlamofireAdapter.swift */; };
 		D58C8F272641DE400095D9D8 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F262641DE400095D9D8 /* UrlProtocolStub.swift */; };
 		D58C8F2F2642E2610095D9D8 /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F2E2642E2610095D9D8 /* AddAccountIntegrationTests.swift */; };
@@ -131,7 +131,7 @@
 		D51F94392648B6A8001B6EE4 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51F943C2648B6A8001B6EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D51F94412648B6A9001B6EE4 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D51F94462648B6A9001B6EE4 /* PresentationPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationPresenterTests.swift; sourceTree = "<group>"; };
+		D51F94462648B6A9001B6EE4 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
 		D51F94482648B6A9001B6EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D58C8F222641DD6B0095D9D8 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		D58C8F262641DE400095D9D8 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
@@ -287,7 +287,7 @@
 		D51F94452648B6A9001B6EE4 /* PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
-				D51F94462648B6A9001B6EE4 /* PresentationPresenterTests.swift */,
+				D51F94462648B6A9001B6EE4 /* SignUpPresenterTests.swift */,
 				D51F94482648B6A9001B6EE4 /* Info.plist */,
 			);
 			path = PresentationTests;
@@ -758,7 +758,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D51F94472648B6A9001B6EE4 /* PresentationPresenterTests.swift in Sources */,
+				D51F94472648B6A9001B6EE4 /* SignUpPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
