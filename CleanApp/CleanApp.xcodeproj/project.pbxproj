@@ -14,6 +14,8 @@
 		D50382DC262A16D90089F448 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50382DB262A16D90089F448 /* HttpError.swift */; };
 		D51F94422648B6A9001B6EE4 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F94392648B6A8001B6EE4 /* Presentation.framework */; };
 		D51F94472648B6A9001B6EE4 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F94462648B6A9001B6EE4 /* SignUpPresenterTests.swift */; };
+		D51F9451264AD30B001B6EE4 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F9450264AD30B001B6EE4 /* SignUpPresenter.swift */; };
+		D51F9456264AD39E001B6EE4 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F9455264AD39E001B6EE4 /* AlertView.swift */; };
 		D58C8F232641DD6B0095D9D8 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F222641DD6B0095D9D8 /* AlamofireAdapter.swift */; };
 		D58C8F272641DE400095D9D8 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F262641DE400095D9D8 /* UrlProtocolStub.swift */; };
 		D58C8F2F2642E2610095D9D8 /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F2E2642E2610095D9D8 /* AddAccountIntegrationTests.swift */; };
@@ -45,6 +47,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D51F94382648B6A8001B6EE4;
 			remoteInfo = Presentation;
+		};
+		D51F9452264AD32C001B6EE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5CA27302628B641000F211F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5CA274A2628B86B000F211F;
+			remoteInfo = Domain;
 		};
 		D58C8F322642E2610095D9D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -133,6 +142,8 @@
 		D51F94412648B6A9001B6EE4 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51F94462648B6A9001B6EE4 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
 		D51F94482648B6A9001B6EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D51F9450264AD30B001B6EE4 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		D51F9455264AD39E001B6EE4 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		D58C8F222641DD6B0095D9D8 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		D58C8F262641DE400095D9D8 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		D58C8F2C2642E2610095D9D8 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -279,6 +290,8 @@
 		D51F943A2648B6A8001B6EE4 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D51F9454264AD38F001B6EE4 /* Views */,
+				D51F9457264AD3B5001B6EE4 /* Presenters */,
 				D51F943C2648B6A8001B6EE4 /* Info.plist */,
 			);
 			path = Presentation;
@@ -287,10 +300,34 @@
 		D51F94452648B6A9001B6EE4 /* PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
-				D51F94462648B6A9001B6EE4 /* SignUpPresenterTests.swift */,
+				D51F9458264AD4B0001B6EE4 /* Presenters */,
 				D51F94482648B6A9001B6EE4 /* Info.plist */,
 			);
 			path = PresentationTests;
+			sourceTree = "<group>";
+		};
+		D51F9454264AD38F001B6EE4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D51F9455264AD39E001B6EE4 /* AlertView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D51F9457264AD3B5001B6EE4 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				D51F9450264AD30B001B6EE4 /* SignUpPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		D51F9458264AD4B0001B6EE4 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				D51F94462648B6A9001B6EE4 /* SignUpPresenterTests.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 		D58C8F242641DDA70095D9D8 /* Http */ = {
@@ -480,6 +517,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D51F9453264AD32C001B6EE4 /* PBXTargetDependency */,
 			);
 			name = Presentation;
 			productName = Presentation;
@@ -632,6 +670,7 @@
 				TargetAttributes = {
 					D51F94382648B6A8001B6EE4 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					D51F94402648B6A9001B6EE4 = {
 						CreatedOnToolsVersion = 12.5;
@@ -751,6 +790,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51F9451264AD30B001B6EE4 /* SignUpPresenter.swift in Sources */,
+				D51F9456264AD39E001B6EE4 /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,6 +872,11 @@
 			target = D51F94382648B6A8001B6EE4 /* Presentation */;
 			targetProxy = D51F94432648B6A9001B6EE4 /* PBXContainerItemProxy */;
 		};
+		D51F9453264AD32C001B6EE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5CA274A2628B86B000F211F /* Domain */;
+			targetProxy = D51F9452264AD32C001B6EE4 /* PBXContainerItemProxy */;
+		};
 		D58C8F332642E2610095D9D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D5CA275F2628BA95000F211F /* Data */;
@@ -872,6 +918,7 @@
 		D51F944A2648B6A9001B6EE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -890,6 +937,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -897,6 +945,7 @@
 		D51F944B2648B6A9001B6EE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -922,6 +971,7 @@
 		D51F944C2648B6A9001B6EE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = PresentationTests/Info.plist;
@@ -941,6 +991,7 @@
 		D51F944D2648B6A9001B6EE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = PresentationTests/Info.plist;
