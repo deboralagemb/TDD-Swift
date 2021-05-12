@@ -21,6 +21,7 @@
 		D51F945D264B4F03001B6EE4 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D2967426379E500094896F /* TestExtensions.swift */; };
 		D51F945F264B509B001B6EE4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F945E264B509B001B6EE4 /* LoadingView.swift */; };
 		D51F9462264B5779001B6EE4 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F9461264B5779001B6EE4 /* SignUpViewModel.swift */; };
+		D51F9464264B57C1001B6EE4 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F9463264B57C1001B6EE4 /* SignUpMapper.swift */; };
 		D58C8F232641DD6B0095D9D8 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F222641DD6B0095D9D8 /* AlamofireAdapter.swift */; };
 		D58C8F272641DE400095D9D8 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F262641DE400095D9D8 /* UrlProtocolStub.swift */; };
 		D58C8F2F2642E2610095D9D8 /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F2E2642E2610095D9D8 /* AddAccountIntegrationTests.swift */; };
@@ -152,6 +153,7 @@
 		D51F945A264AECFB001B6EE4 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		D51F945E264B509B001B6EE4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		D51F9461264B5779001B6EE4 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		D51F9463264B57C1001B6EE4 /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 		D58C8F222641DD6B0095D9D8 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		D58C8F262641DE400095D9D8 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		D58C8F2C2642E2610095D9D8 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -353,6 +355,7 @@
 			children = (
 				D51F9450264AD30B001B6EE4 /* SignUpPresenter.swift */,
 				D51F9461264B5779001B6EE4 /* SignUpViewModel.swift */,
+				D51F9463264B57C1001B6EE4 /* SignUpMapper.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -817,6 +820,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51F9464264B57C1001B6EE4 /* SignUpMapper.swift in Sources */,
 				D51F9451264AD30B001B6EE4 /* SignUpPresenter.swift in Sources */,
 				D51F945F264B509B001B6EE4 /* LoadingView.swift in Sources */,
 				D51F9462264B5779001B6EE4 /* SignUpViewModel.swift in Sources */,
