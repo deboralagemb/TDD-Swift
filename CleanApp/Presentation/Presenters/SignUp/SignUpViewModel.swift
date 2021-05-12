@@ -13,7 +13,7 @@ public struct SignUpViewModel {
     public var password: String?
     public var passwordConfirmation: String?
     
-    public init(name: String? = nil, email: String? = nil, password: String? = nil, passwordConfirmation: String? = nil){
+    public init(name: String? = nil, email: String? = nil, password: String? = nil, passwordConfirmation: String? = nil) {
         self.name = name
         self.email = email
         self.password = password
