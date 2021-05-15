@@ -65,6 +65,7 @@
 		D51F952526506099001B6EE4 /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F952426506099001B6EE4 /* WeakVarProxy.swift */; };
 		D51F952A26506453001B6EE4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F952926506453001B6EE4 /* Environment.swift */; };
 		D51F952C265072A2001B6EE4 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F9472264B5A86001B6EE4 /* TestFactories.swift */; };
+		D51F952F26507A6F001B6EE4 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F952E26507A6F001B6EE4 /* MainQueueDispatchDecorator.swift */; };
 		D58C8F232641DD6B0095D9D8 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F222641DD6B0095D9D8 /* AlamofireAdapter.swift */; };
 		D58C8F272641DE400095D9D8 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F262641DE400095D9D8 /* UrlProtocolStub.swift */; };
 		D58C8F2F2642E2610095D9D8 /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F2E2642E2610095D9D8 /* AddAccountIntegrationTests.swift */; };
@@ -348,6 +349,7 @@
 		D51F95272650637E001B6EE4 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		D51F9528265063E9001B6EE4 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		D51F952926506453001B6EE4 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		D51F952E26507A6F001B6EE4 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		D58C8F222641DD6B0095D9D8 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		D58C8F262641DE400095D9D8 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		D58C8F2C2642E2610095D9D8 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -742,6 +744,7 @@
 		D51F94CF264D8B7C001B6EE4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D51F952D26507A61001B6EE4 /* Decorators */,
 				D51F95262650636F001B6EE4 /* Env */,
 				D51F952326506088001B6EE4 /* Proxies */,
 				D51F951C264D965B001B6EE4 /* Composers */,
@@ -804,6 +807,14 @@
 				D51F951F264D97BF001B6EE4 /* SignUpComposerTests.swift */,
 			);
 			path = Composers;
+			sourceTree = "<group>";
+		};
+		D51F952D26507A61001B6EE4 /* Decorators */ = {
+			isa = PBXGroup;
+			children = (
+				D51F952E26507A6F001B6EE4 /* MainQueueDispatchDecorator.swift */,
+			);
+			path = Decorators;
 			sourceTree = "<group>";
 		};
 		D58C8F242641DDA70095D9D8 /* Http */ = {
@@ -1547,6 +1558,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D51F951B264D95FC001B6EE4 /* UseCaseFactory.swift in Sources */,
+				D51F952F26507A6F001B6EE4 /* MainQueueDispatchDecorator.swift in Sources */,
 				D51F952A26506453001B6EE4 /* Environment.swift in Sources */,
 				D51F94D1264D8B7C001B6EE4 /* AppDelegate.swift in Sources */,
 				D51F94D3264D8B7C001B6EE4 /* SceneDelegate.swift in Sources */,
