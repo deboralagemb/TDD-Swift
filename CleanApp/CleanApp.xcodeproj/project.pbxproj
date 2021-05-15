@@ -63,6 +63,7 @@
 		D51F9520264D97BF001B6EE4 /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F951F264D97BF001B6EE4 /* SignUpIntegrationTests.swift */; };
 		D51F9521264D983A001B6EE4 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F946D264B59A2001B6EE4 /* AddAccountSpy.swift */; };
 		D51F9522264D9891001B6EE4 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D2967426379E500094896F /* TestExtensions.swift */; };
+		D51F952526506099001B6EE4 /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F952426506099001B6EE4 /* WeakVarProxy.swift */; };
 		D58C8F232641DD6B0095D9D8 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F222641DD6B0095D9D8 /* AlamofireAdapter.swift */; };
 		D58C8F272641DE400095D9D8 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F262641DE400095D9D8 /* UrlProtocolStub.swift */; };
 		D58C8F2F2642E2610095D9D8 /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F2E2642E2610095D9D8 /* AddAccountIntegrationTests.swift */; };
@@ -343,6 +344,7 @@
 		D51F951A264D95FC001B6EE4 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		D51F951D264D9668001B6EE4 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 		D51F951F264D97BF001B6EE4 /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
+		D51F952426506099001B6EE4 /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
 		D58C8F222641DD6B0095D9D8 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		D58C8F262641DE400095D9D8 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		D58C8F2C2642E2610095D9D8 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -737,6 +739,7 @@
 		D51F94CF264D8B7C001B6EE4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D51F952326506088001B6EE4 /* Proxies */,
 				D51F951C264D965B001B6EE4 /* Composers */,
 				D51F9517264D8D6E001B6EE4 /* Factories */,
 				D51F94D0264D8B7C001B6EE4 /* AppDelegate.swift */,
@@ -772,6 +775,14 @@
 				D51F951D264D9668001B6EE4 /* SignUpComposer.swift */,
 			);
 			path = Composers;
+			sourceTree = "<group>";
+		};
+		D51F952326506088001B6EE4 /* Proxies */ = {
+			isa = PBXGroup;
+			children = (
+				D51F952426506099001B6EE4 /* WeakVarProxy.swift */,
+			);
+			path = Proxies;
 			sourceTree = "<group>";
 		};
 		D58C8F242641DDA70095D9D8 /* Http */ = {
@@ -1518,6 +1529,7 @@
 				D51F94D1264D8B7C001B6EE4 /* AppDelegate.swift in Sources */,
 				D51F9519264D8D7D001B6EE4 /* ControllerFactory.swift in Sources */,
 				D51F94D3264D8B7C001B6EE4 /* SceneDelegate.swift in Sources */,
+				D51F952526506099001B6EE4 /* WeakVarProxy.swift in Sources */,
 				D51F951E264D9668001B6EE4 /* SignUpComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
