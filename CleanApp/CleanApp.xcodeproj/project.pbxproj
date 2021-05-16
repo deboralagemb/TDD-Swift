@@ -89,6 +89,8 @@
 		D51F956B2651BA10001B6EE4 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F956A2651BA10001B6EE4 /* RoundedTextField.swift */; };
 		D51F956D2651BAF3001B6EE4 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F956C2651BAF3001B6EE4 /* NavigationController.swift */; };
 		D51F956F2651BF23001B6EE4 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F956E2651BF23001B6EE4 /* Authentication.swift */; };
+		D51F95712651BFBA001B6EE4 /* RemoteAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F95702651BFBA001B6EE4 /* RemoteAuthenticationTests.swift */; };
+		D51F95732651C07D001B6EE4 /* RemoteAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F95722651C07D001B6EE4 /* RemoteAuthentication.swift */; };
 		D58C8F232641DD6B0095D9D8 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F222641DD6B0095D9D8 /* AlamofireAdapter.swift */; };
 		D58C8F272641DE400095D9D8 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F262641DE400095D9D8 /* UrlProtocolStub.swift */; };
 		D58C8F2F2642E2610095D9D8 /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F2E2642E2610095D9D8 /* AddAccountIntegrationTests.swift */; };
@@ -400,6 +402,8 @@
 		D51F956A2651BA10001B6EE4 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		D51F956C2651BAF3001B6EE4 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		D51F956E2651BF23001B6EE4 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		D51F95702651BFBA001B6EE4 /* RemoteAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAuthenticationTests.swift; sourceTree = "<group>"; };
+		D51F95722651C07D001B6EE4 /* RemoteAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAuthentication.swift; sourceTree = "<group>"; };
 		D58C8F222641DD6B0095D9D8 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		D58C8F262641DE400095D9D8 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		D58C8F2C2642E2610095D9D8 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -568,6 +572,7 @@
 			isa = PBXGroup;
 			children = (
 				D50382C3262A0D2D0089F448 /* RemoteAddAccount.swift */,
+				D51F95722651C07D001B6EE4 /* RemoteAuthentication.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -585,6 +590,7 @@
 			isa = PBXGroup;
 			children = (
 				D5CA276D2628BA95000F211F /* RemoteAddAccountTests.swift */,
+				D51F95702651BFBA001B6EE4 /* RemoteAuthenticationTests.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -1775,6 +1781,7 @@
 				D50382C8262A0D670089F448 /* HttpPostClient.swift in Sources */,
 				D5D2966C263794380094896F /* ExtensionHelpers.swift in Sources */,
 				D50382DC262A16D90089F448 /* HttpError.swift in Sources */,
+				D51F95732651C07D001B6EE4 /* RemoteAuthentication.swift in Sources */,
 				D50382C4262A0D2D0089F448 /* RemoteAddAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1788,6 +1795,7 @@
 				D5CA276E2628BA95000F211F /* RemoteAddAccountTests.swift in Sources */,
 				D5D296862637A02D0094896F /* AccountModelFactory.swift in Sources */,
 				D5D2967526379E500094896F /* TestExtensions.swift in Sources */,
+				D51F95712651BFBA001B6EE4 /* RemoteAuthenticationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
