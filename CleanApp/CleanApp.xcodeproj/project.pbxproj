@@ -83,6 +83,11 @@
 		D51F955926516BE6001B6EE4 /* ApiUrlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F955826516BE6001B6EE4 /* ApiUrlFactory.swift */; };
 		D51F955C26516D02001B6EE4 /* AlamofireAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F955B26516D02001B6EE4 /* AlamofireAdapterFactory.swift */; };
 		D51F956126516DFC001B6EE4 /* EmailValidatorAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F956026516DFC001B6EE4 /* EmailValidatorAdapter.swift */; };
+		D51F95642651B083001B6EE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D51F95632651B083001B6EE4 /* Images.xcassets */; };
+		D51F95662651B678001B6EE4 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F95652651B678001B6EE4 /* UIColorExtensions.swift */; };
+		D51F95682651B944001B6EE4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F95672651B944001B6EE4 /* Color.swift */; };
+		D51F956B2651BA10001B6EE4 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F956A2651BA10001B6EE4 /* RoundedTextField.swift */; };
+		D51F956D2651BAF3001B6EE4 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F956C2651BAF3001B6EE4 /* NavigationController.swift */; };
 		D58C8F232641DD6B0095D9D8 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F222641DD6B0095D9D8 /* AlamofireAdapter.swift */; };
 		D58C8F272641DE400095D9D8 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F262641DE400095D9D8 /* UrlProtocolStub.swift */; };
 		D58C8F2F2642E2610095D9D8 /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F2E2642E2610095D9D8 /* AddAccountIntegrationTests.swift */; };
@@ -388,6 +393,11 @@
 		D51F955826516BE6001B6EE4 /* ApiUrlFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrlFactory.swift; sourceTree = "<group>"; };
 		D51F955B26516D02001B6EE4 /* AlamofireAdapterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterFactory.swift; sourceTree = "<group>"; };
 		D51F956026516DFC001B6EE4 /* EmailValidatorAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorAdapter.swift; sourceTree = "<group>"; };
+		D51F95632651B083001B6EE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D51F95652651B678001B6EE4 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		D51F95672651B944001B6EE4 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		D51F956A2651BA10001B6EE4 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		D51F956C2651BAF3001B6EE4 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		D58C8F222641DD6B0095D9D8 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		D58C8F262641DE400095D9D8 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		D58C8F2C2642E2610095D9D8 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -694,7 +704,9 @@
 		D51F947A264CA32D001B6EE4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D51F95622651B069001B6EE4 /* Resources */,
 				D51F94A2264CBF4B001B6EE4 /* Helpers */,
+				D51F95692651B9FD001B6EE4 /* Components */,
 				D51F949D264CB8FD001B6EE4 /* Scenes */,
 				D51F947C264CA32D001B6EE4 /* Info.plist */,
 			);
@@ -757,6 +769,8 @@
 			children = (
 				D51F94A3264CBF6E001B6EE4 /* UIViewControllerExtensions.swift */,
 				D51F94A5264CC043001B6EE4 /* Storyboarded.swift */,
+				D51F95652651B678001B6EE4 /* UIColorExtensions.swift */,
+				D51F95672651B944001B6EE4 /* Color.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -929,6 +943,23 @@
 				D51F951D264D9668001B6EE4 /* SignUpControllerFactory.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D51F95622651B069001B6EE4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D51F95632651B083001B6EE4 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D51F95692651B9FD001B6EE4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D51F956A2651BA10001B6EE4 /* RoundedTextField.swift */,
+				D51F956C2651BAF3001B6EE4 /* NavigationController.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		D58C8F242641DDA70095D9D8 /* Http */ = {
@@ -1523,6 +1554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D51F949A264CA979001B6EE4 /* SignUp.storyboard in Resources */,
+				D51F95642651B083001B6EE4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1640,8 +1672,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D51F94A4264CBF6E001B6EE4 /* UIViewControllerExtensions.swift in Sources */,
+				D51F956B2651BA10001B6EE4 /* RoundedTextField.swift in Sources */,
 				D51F9496264CA91E001B6EE4 /* SignUpViewController.swift in Sources */,
 				D51F94A6264CC043001B6EE4 /* Storyboarded.swift in Sources */,
+				D51F95682651B944001B6EE4 /* Color.swift in Sources */,
+				D51F956D2651BAF3001B6EE4 /* NavigationController.swift in Sources */,
+				D51F95662651B678001B6EE4 /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
