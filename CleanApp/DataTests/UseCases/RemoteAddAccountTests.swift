@@ -62,7 +62,6 @@ class RemoteAddAccountTests: XCTestCase {
         httpClientSpy.completeWithError(.noConnectivity)
         XCTAssertNil(result)
     }
-    
 }
 
 // MARK: adicionar helpers em extensions
