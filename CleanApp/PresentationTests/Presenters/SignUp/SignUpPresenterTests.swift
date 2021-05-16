@@ -17,7 +17,7 @@ class SignUpPresenterTests: XCTestCase {
         XCTAssertEqual(addAccountSpy.addAccountModel, makeAddAccountModel())
     }
     
-    func test_signup_should_show_error_message_if_addAccount_fails() throws {
+    func test_signup_should_show_generic_error_message_if_addAccount_fails() throws {
         let alertViewSpy = AlertViewSpy()
         let addAccountSpy = AddAccountSpy()
         let sut = makeSut(alertView: alertViewSpy, addAccount: addAccountSpy)
@@ -28,6 +28,20 @@ class SignUpPresenterTests: XCTestCase {
         }
         sut.signup(viewModel: makeSignUpViewModel())
         addAccountSpy.completeWithError(.unexpected)
+        wait(for: [exp], timeout: 1)
+    }
+    
+    func test_signup_should_show_email_in_use_error_message_if_addAccount_returns_email_in_use_error() throws {
+        let alertViewSpy = AlertViewSpy()
+        let addAccountSpy = AddAccountSpy()
+        let sut = makeSut(alertView: alertViewSpy, addAccount: addAccountSpy)
+        let exp = expectation(description: "waiting")
+        alertViewSpy.observe { viewModel in
+            XCTAssertEqual(viewModel, AlertViewModel(title: "Erro", message: "Esse e-mail já está em uso"))
+            exp.fulfill()
+        }
+        sut.signup(viewModel: makeSignUpViewModel())
+        addAccountSpy.completeWithError(.emailInUse)
         wait(for: [exp], timeout: 1)
     }
     
