@@ -100,6 +100,8 @@
 		D58C8F2F2642E2610095D9D8 /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F2E2642E2610095D9D8 /* AddAccountIntegrationTests.swift */; };
 		D58C8F312642E2610095D9D8 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CA27602628BA95000F211F /* Data.framework */; };
 		D592BF012653393500884EB6 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D592BF002653393500884EB6 /* Login.storyboard */; };
+		D592BF04265339D700884EB6 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D592BF03265339D700884EB6 /* LoginViewControllerTests.swift */; };
+		D592BF0626533A1700884EB6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D592BF0526533A1700884EB6 /* LoginViewController.swift */; };
 		D5CA27562628B8D6000F211F /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA27552628B8D6000F211F /* AddAccount.swift */; };
 		D5CA27592628BA3F000F211F /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA27582628BA3F000F211F /* AccountModel.swift */; };
 		D5CA27692628BA95000F211F /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CA27602628BA95000F211F /* Data.framework */; };
@@ -419,6 +421,8 @@
 		D58C8F2E2642E2610095D9D8 /* AddAccountIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountIntegrationTests.swift; sourceTree = "<group>"; };
 		D58C8F302642E2610095D9D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D592BF002653393500884EB6 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D592BF03265339D700884EB6 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
+		D592BF0526533A1700884EB6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D5CA274B2628B86B000F211F /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CA274E2628B86B000F211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5CA27552628B8D6000F211F /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -774,6 +778,7 @@
 		D51F949E264CB90B001B6EE4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D592BF02265339CE00884EB6 /* Login */,
 				D51F949C264CB8C6001B6EE4 /* SignUp */,
 			);
 			path = Scenes;
@@ -1032,7 +1037,16 @@
 		D592BEFF265338C700884EB6 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				D592BF0526533A1700884EB6 /* LoginViewController.swift */,
 				D592BF002653393500884EB6 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D592BF02265339CE00884EB6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D592BF03265339D700884EB6 /* LoginViewControllerTests.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1728,6 +1742,7 @@
 				D51F956B2651BA10001B6EE4 /* RoundedTextField.swift in Sources */,
 				D51F9496264CA91E001B6EE4 /* SignUpViewController.swift in Sources */,
 				D51F94A6264CC043001B6EE4 /* Storyboarded.swift in Sources */,
+				D592BF0626533A1700884EB6 /* LoginViewController.swift in Sources */,
 				D51F95682651B944001B6EE4 /* Color.swift in Sources */,
 				D51F956D2651BAF3001B6EE4 /* NavigationController.swift in Sources */,
 				D51F95662651B678001B6EE4 /* UIColorExtensions.swift in Sources */,
@@ -1738,6 +1753,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D592BF04265339D700884EB6 /* LoginViewControllerTests.swift in Sources */,
 				D51F9487264CA32D001B6EE4 /* SignUpViewControllerTests.swift in Sources */,
 				D51F94A1264CB95B001B6EE4 /* TestExtensions.swift in Sources */,
 			);
