@@ -99,6 +99,7 @@
 		D58C8F272641DE400095D9D8 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F262641DE400095D9D8 /* UrlProtocolStub.swift */; };
 		D58C8F2F2642E2610095D9D8 /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C8F2E2642E2610095D9D8 /* AddAccountIntegrationTests.swift */; };
 		D58C8F312642E2610095D9D8 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CA27602628BA95000F211F /* Data.framework */; };
+		D592BF012653393500884EB6 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D592BF002653393500884EB6 /* Login.storyboard */; };
 		D5CA27562628B8D6000F211F /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA27552628B8D6000F211F /* AddAccount.swift */; };
 		D5CA27592628BA3F000F211F /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA27582628BA3F000F211F /* AccountModel.swift */; };
 		D5CA27692628BA95000F211F /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CA27602628BA95000F211F /* Data.framework */; };
@@ -417,6 +418,7 @@
 		D58C8F2C2642E2610095D9D8 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58C8F2E2642E2610095D9D8 /* AddAccountIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountIntegrationTests.swift; sourceTree = "<group>"; };
 		D58C8F302642E2610095D9D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D592BF002653393500884EB6 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		D5CA274B2628B86B000F211F /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CA274E2628B86B000F211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5CA27552628B8D6000F211F /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -763,6 +765,7 @@
 		D51F949D264CB8FD001B6EE4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D592BEFF265338C700884EB6 /* Login */,
 				D51F949B264CB8BC001B6EE4 /* SignUp */,
 			);
 			path = Scenes;
@@ -1024,6 +1027,14 @@
 				D58C8F302642E2610095D9D8 /* Info.plist */,
 			);
 			path = UseCasesIntegrationTests;
+			sourceTree = "<group>";
+		};
+		D592BEFF265338C700884EB6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D592BF002653393500884EB6 /* Login.storyboard */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		D5CA272F2628B641000F211F = {
@@ -1592,6 +1603,7 @@
 			files = (
 				D51F949A264CA979001B6EE4 /* SignUp.storyboard in Resources */,
 				D51F95642651B083001B6EE4 /* Images.xcassets in Resources */,
+				D592BF012653393500884EB6 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
