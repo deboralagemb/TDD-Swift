@@ -11,7 +11,11 @@ import Presentation
 import Validation
 import Domain
 
-public func makeLoginController(authentication: Authentication) -> LoginViewController {
+public func makeLoginController() -> LoginViewController {
+    return makeLoginControllerWith(authentication: makeRemoteAuthentication())
+}
+
+public func makeLoginControllerWith(authentication: Authentication) -> LoginViewController {
     let controller = LoginViewController.instantiate()
     let validationComposite = ValidationComposite(validations: makeLoginValidations())
     let presenter = LoginPresenter(validation: validationComposite, alertView: WeakVarProxy(controller), authentication: authentication, loadingView: WeakVarProxy(controller))
@@ -20,7 +24,6 @@ public func makeLoginController(authentication: Authentication) -> LoginViewCont
 }
 
 public func makeLoginValidations() -> [Validation] {
-    return [RequiredFieldValidation(fieldName: "email", fieldLabel: "Email"),
-            EmailValidation(fieldName: "email", fieldLabel: "Email", emailValidator: makeEmailValidatorAdapter()),
-            RequiredFieldValidation(fieldName: "password", fieldLabel: "Senha")]
+    return ValidationBuilder.field("email").label("Email").required().email().build() +
+        ValidationBuilder.field("password").label("Senha").required().build()
 }
