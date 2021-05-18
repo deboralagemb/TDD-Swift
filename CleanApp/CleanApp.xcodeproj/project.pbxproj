@@ -107,6 +107,7 @@
 		D592BF102653473C00884EB6 /* RemoteAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D592BF0F2653473C00884EB6 /* RemoteAuthenticationFactory.swift */; };
 		D592BF122653478400884EB6 /* LoginControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D592BF112653478400884EB6 /* LoginControllerFactory.swift */; };
 		D592BF13265347FC00884EB6 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F957C2651CF11001B6EE4 /* AuthenticationSpy.swift */; };
+		D592BF16265440BB00884EB6 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D592BF15265440BB00884EB6 /* Welcome.storyboard */; };
 		D5CA27562628B8D6000F211F /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA27552628B8D6000F211F /* AddAccount.swift */; };
 		D5CA27592628BA3F000F211F /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA27582628BA3F000F211F /* AccountModel.swift */; };
 		D5CA27692628BA95000F211F /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CA27602628BA95000F211F /* Data.framework */; };
@@ -431,6 +432,7 @@
 		D592BF0D2653467500884EB6 /* LoginControllerFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginControllerFactoryTests.swift; sourceTree = "<group>"; };
 		D592BF0F2653473C00884EB6 /* RemoteAuthenticationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAuthenticationFactory.swift; sourceTree = "<group>"; };
 		D592BF112653478400884EB6 /* LoginControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginControllerFactory.swift; sourceTree = "<group>"; };
+		D592BF15265440BB00884EB6 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		D5CA274B2628B86B000F211F /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CA274E2628B86B000F211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5CA27552628B8D6000F211F /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -777,6 +779,7 @@
 		D51F949D264CB8FD001B6EE4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D592BF14265440A900884EB6 /* Welcome */,
 				D592BEFF265338C700884EB6 /* Login */,
 				D51F949B264CB8BC001B6EE4 /* SignUp */,
 			);
@@ -1060,6 +1063,14 @@
 				D592BF03265339D700884EB6 /* LoginViewControllerTests.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		D592BF14265440A900884EB6 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				D592BF15265440BB00884EB6 /* Welcome.storyboard */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		D5CA272F2628B641000F211F = {
@@ -1627,6 +1638,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D51F949A264CA979001B6EE4 /* SignUp.storyboard in Resources */,
+				D592BF16265440BB00884EB6 /* Welcome.storyboard in Resources */,
 				D51F95642651B083001B6EE4 /* Images.xcassets in Resources */,
 				D592BF012653393500884EB6 /* Login.storyboard in Resources */,
 			);
