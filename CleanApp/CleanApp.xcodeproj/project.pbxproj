@@ -110,6 +110,7 @@
 		D592BF16265440BB00884EB6 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D592BF15265440BB00884EB6 /* Welcome.storyboard */; };
 		D592BF192654431700884EB6 /* WelcomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D592BF182654431700884EB6 /* WelcomeViewControllerTests.swift */; };
 		D592BF1B2654447800884EB6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D592BF1A2654447800884EB6 /* WelcomeViewController.swift */; };
+		D592BF1D2654499200884EB6 /* WelcomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D592BF1C2654499200884EB6 /* WelcomeRouterTests.swift */; };
 		D5CA27562628B8D6000F211F /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA27552628B8D6000F211F /* AddAccount.swift */; };
 		D5CA27592628BA3F000F211F /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA27582628BA3F000F211F /* AccountModel.swift */; };
 		D5CA27692628BA95000F211F /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CA27602628BA95000F211F /* Data.framework */; };
@@ -437,6 +438,7 @@
 		D592BF15265440BB00884EB6 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		D592BF182654431700884EB6 /* WelcomeViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewControllerTests.swift; sourceTree = "<group>"; };
 		D592BF1A2654447800884EB6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		D592BF1C2654499200884EB6 /* WelcomeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouterTests.swift; sourceTree = "<group>"; };
 		D5CA274B2628B86B000F211F /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CA274E2628B86B000F211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5CA27552628B8D6000F211F /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -1083,6 +1085,7 @@
 			isa = PBXGroup;
 			children = (
 				D592BF182654431700884EB6 /* WelcomeViewControllerTests.swift */,
+				D592BF1C2654499200884EB6 /* WelcomeRouterTests.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -1796,6 +1799,7 @@
 				D592BF192654431700884EB6 /* WelcomeViewControllerTests.swift in Sources */,
 				D51F94A1264CB95B001B6EE4 /* TestExtensionsUI.swift in Sources */,
 				D592BF0C2653429600884EB6 /* TestExtensions.swift in Sources */,
+				D592BF1D2654499200884EB6 /* WelcomeRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
