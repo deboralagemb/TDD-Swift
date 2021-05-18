@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 public final class NavigationController: UINavigationController {
+    private var currentViewController: UIViewController?
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
@@ -33,9 +35,18 @@ public final class NavigationController: UINavigationController {
     
     public func setRootViewController(_ viewControler: UIViewController) {
         setViewControllers([viewControler], animated: true)
+        currentViewController = viewControler
+        hideBackButtonText()
+        viewControler.navigationItem.backBarButtonItem = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
+    }
+    
+    public func hideBackButtonText() {
+        currentViewController?.navigationItem.backBarButtonItem = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
     }
     
     public func pushViewController(_ viewController: UIViewController) {
         pushViewController(viewController, animated: true)
+        currentViewController = viewController
+        hideBackButtonText()
     }
 }
