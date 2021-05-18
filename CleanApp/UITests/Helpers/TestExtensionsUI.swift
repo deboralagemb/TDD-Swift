@@ -1,5 +1,5 @@
 //
-//  TestExtensions.swift
+//  TestExtensionsUI.swift
 //  UITests
 //
 //  Created by Débora Lage on 12/05/21.

@@ -11,7 +11,7 @@ import Infra
 import Domain
 
 class AddAccountIntegrationTests: XCTestCase {
-    func test_add_account() throws {
+    func test_add_account() {
         let alamofireAdapter = AlamofireAdapter()
         let url = URL(string: "https://fordevs.herokuapp.com/api/signup")!
         let sut = RemoteAddAccount(url: url, httpClient: alamofireAdapter)

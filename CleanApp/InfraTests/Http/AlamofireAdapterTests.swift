@@ -11,7 +11,7 @@ import Data
 import Infra
 
 class AlamofireAdapterTests: XCTestCase {
-    func test_post_should_make_request_with_valid_url_and_method() throws {
+    func test_post_should_make_request_with_valid_url_and_method() {
         let url = makeURL()
         testRequestFor(url: url, data: makeValidData()) { request in
             XCTAssertEqual(url, request.url)
@@ -20,17 +20,17 @@ class AlamofireAdapterTests: XCTestCase {
         }
     }
     
-    func test_post_should_make_request_with_no_data() throws {
+    func test_post_should_make_request_with_no_data() {
         testRequestFor(data: nil) { request in
             XCTAssertNil(request.httpBodyStream)
         }
     }
     
-    func test_post_should_complete_with_error_when_request_completes_with_error() throws {
+    func test_post_should_complete_with_error_when_request_completes_with_error() {
         expectResult(.failure(.noConnectivity), when: (data: nil, response: nil, error: makeError()))
     }
     
-    func test_post_should_complete_with_error_on_all_invalid_cases() throws {
+    func test_post_should_complete_with_error_on_all_invalid_cases() {
         expectResult(.failure(.noConnectivity), when: (data: makeValidData(), response: makeHttpResponse(), error: makeError()))
         expectResult(.failure(.noConnectivity), when: (data: makeValidData(), response: nil, error: makeError()))
         expectResult(.failure(.noConnectivity), when: (data: makeValidData(), response: nil, error: nil))
@@ -39,17 +39,17 @@ class AlamofireAdapterTests: XCTestCase {
         expectResult(.failure(.noConnectivity), when: (data: nil, response: nil, error: nil))
     }
     
-    func test_post_should_complete_with_data_when_request_completes_with_200() throws {
+    func test_post_should_complete_with_data_when_request_completes_with_200() {
         expectResult(.success(makeValidData()), when: (data: makeValidData(), response: makeHttpResponse(), error: nil))
     }
     
-    func test_post_should_complete_with_no_data_when_request_completes_with_204() throws {
+    func test_post_should_complete_with_no_data_when_request_completes_with_204() {
         expectResult(.success(nil), when: (data: nil, response: makeHttpResponse(statusCode: 204), error: nil))
         expectResult(.success(nil), when: (data: makeEmptyData(), response: makeHttpResponse(statusCode: 204), error: nil))
         expectResult(.success(nil), when: (data: makeValidData(), response: makeHttpResponse(statusCode: 204), error: nil))
     }
     
-    func test_post_should_complete_with_error_when_request_completes_with_non_200() throws {
+    func test_post_should_complete_with_error_when_request_completes_with_non_200() {
         expectResult(.failure(.badRequest), when: (data: makeValidData(), response: makeHttpResponse(statusCode: 400), error: nil))
         expectResult(.failure(.badRequest), when: (data: makeValidData(), response: makeHttpResponse(statusCode: 450), error: nil))
         expectResult(.failure(.badRequest), when: (data: makeValidData(), response: makeHttpResponse(statusCode: 499), error: nil))

@@ -10,14 +10,14 @@ import Domain
 import Presentation
 
 class SignUpPresenterTests: XCTestCase {
-    func test_signup_should_call_addAccount_with_correct_values() throws {
+    func test_signup_should_call_addAccount_with_correct_values() {
         let addAccountSpy = AddAccountSpy()
         let sut = makeSut(addAccount: addAccountSpy)
         sut.signup(viewModel: makeSignUpViewModel())
         XCTAssertEqual(addAccountSpy.addAccountModel, makeAddAccountModel())
     }
     
-    func test_signup_should_show_generic_error_message_if_addAccount_fails() throws {
+    func test_signup_should_show_generic_error_message_if_addAccount_fails() {
         let alertViewSpy = AlertViewSpy()
         let addAccountSpy = AddAccountSpy()
         let sut = makeSut(alertView: alertViewSpy, addAccount: addAccountSpy)
@@ -31,7 +31,7 @@ class SignUpPresenterTests: XCTestCase {
         wait(for: [exp], timeout: 1)
     }
     
-    func test_signup_should_show_email_in_use_error_message_if_addAccount_returns_email_in_use_error() throws {
+    func test_signup_should_show_email_in_use_error_message_if_addAccount_returns_email_in_use_error() {
         let alertViewSpy = AlertViewSpy()
         let addAccountSpy = AddAccountSpy()
         let sut = makeSut(alertView: alertViewSpy, addAccount: addAccountSpy)
@@ -45,7 +45,7 @@ class SignUpPresenterTests: XCTestCase {
         wait(for: [exp], timeout: 1)
     }
     
-    func test_signup_should_show_error_message_if_addAccount_succeeds() throws {
+    func test_signup_should_show_error_message_if_addAccount_succeeds() {
         let alertViewSpy = AlertViewSpy()
         let addAccountSpy = AddAccountSpy()
         let sut = makeSut(alertView: alertViewSpy, addAccount: addAccountSpy)
@@ -59,7 +59,7 @@ class SignUpPresenterTests: XCTestCase {
         wait(for: [exp], timeout: 1)
     }
     
-    func test_signup_should_show_loading_before_and_after_addAccount() throws {
+    func test_signup_should_show_loading_before_and_after_addAccount() {
         let loadingViewSpy = LoadingViewSpy()
         let addAccountSpy = AddAccountSpy()
         let sut = makeSut(addAccount: addAccountSpy, loadingView: loadingViewSpy)
@@ -87,7 +87,7 @@ class SignUpPresenterTests: XCTestCase {
         XCTAssertTrue(NSDictionary(dictionary: validationSpy.data!).isEqual(to: viewModel.toJson()!))
     }
     
-    func test_signup_should_show_error_message_if_validation_fails() throws {
+    func test_signup_should_show_error_message_if_validation_fails() {
         let alertViewSpy = AlertViewSpy()
         let validationSpy = ValidationSpy()
         let sut = makeSut(alertView: alertViewSpy, validation: validationSpy)
