@@ -112,6 +112,7 @@
 		D592BF1B2654447800884EB6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D592BF1A2654447800884EB6 /* WelcomeViewController.swift */; };
 		D592BF1D2654499200884EB6 /* WelcomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D592BF1C2654499200884EB6 /* WelcomeRouterTests.swift */; };
 		D592BF1F26544D8700884EB6 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D592BF1E26544D8700884EB6 /* WelcomeRouter.swift */; };
+		D592BF2126546F4A00884EB6 /* WelcomeControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D592BF2026546F4A00884EB6 /* WelcomeControllerFactory.swift */; };
 		D5CA27562628B8D6000F211F /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA27552628B8D6000F211F /* AddAccount.swift */; };
 		D5CA27592628BA3F000F211F /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA27582628BA3F000F211F /* AccountModel.swift */; };
 		D5CA27692628BA95000F211F /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CA27602628BA95000F211F /* Data.framework */; };
@@ -441,6 +442,7 @@
 		D592BF1A2654447800884EB6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		D592BF1C2654499200884EB6 /* WelcomeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouterTests.swift; sourceTree = "<group>"; };
 		D592BF1E26544D8700884EB6 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		D592BF2026546F4A00884EB6 /* WelcomeControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeControllerFactory.swift; sourceTree = "<group>"; };
 		D5CA274B2628B86B000F211F /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CA274E2628B86B000F211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5CA27552628B8D6000F211F /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -992,6 +994,7 @@
 			children = (
 				D51F951D264D9668001B6EE4 /* SignUpControllerFactory.swift */,
 				D592BF112653478400884EB6 /* LoginControllerFactory.swift */,
+				D592BF2026546F4A00884EB6 /* WelcomeControllerFactory.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1841,6 +1844,7 @@
 				D51F956126516DFC001B6EE4 /* EmailValidatorAdapter.swift in Sources */,
 				D51F951B264D95FC001B6EE4 /* RemoteAddAccountFactory.swift in Sources */,
 				D51F952F26507A6F001B6EE4 /* MainQueueDispatchDecorator.swift in Sources */,
+				D592BF2126546F4A00884EB6 /* WelcomeControllerFactory.swift in Sources */,
 				D51F952A26506453001B6EE4 /* Environment.swift in Sources */,
 				D51F955926516BE6001B6EE4 /* ApiUrlFactory.swift in Sources */,
 				D592BF102653473C00884EB6 /* RemoteAuthenticationFactory.swift in Sources */,
