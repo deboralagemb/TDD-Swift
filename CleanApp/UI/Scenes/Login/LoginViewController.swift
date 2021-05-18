@@ -12,6 +12,10 @@ import Presentation
 public final class LoginViewController: UIViewController, Storyboarded {
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    public var login: ((LoginViewModel) -> Void)?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +25,14 @@ public final class LoginViewController: UIViewController, Storyboarded {
     private func configure() {
         title = "4Dev"
         loginButton.layer.cornerRadius = 5
+        loginButton?.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         hideKeyBoardOnTap()
+    }
+    
+    @objc
+    private func loginButtonTapped() {
+        let viewModel = LoginViewModel(email: emailTextField.text, password: passwordTextField.text)
+        login?(viewModel)
     }
 }
 

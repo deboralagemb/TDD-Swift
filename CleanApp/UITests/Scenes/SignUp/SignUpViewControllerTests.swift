@@ -11,19 +11,19 @@ import Presentation
 @testable import UI
 
 class SignUpViewControllerTests: XCTestCase {
-    func test_loading_is_hidden_on_start() throws {
+    func test_loading_is_hidden_on_start() {
         XCTAssertEqual(makeSut().loadingIndicator?.isAnimating, false)
     }
     
-    func test_sut_implements_loadingView() throws {
+    func test_sut_implements_loadingView() {
         XCTAssertNotNil(makeSut() as LoadingView)
     }
     
-    func test_sut_implements_alertView() throws {
+    func test_sut_implements_alertView() {
         XCTAssertNotNil(makeSut() as AlertView)
     }
     
-    func test_saveButton_calls_signUp_on_tap() throws {
+    func test_saveButton_calls_signUp_on_tap() {
         var signUpViewModel: SignUpViewModel?
         let sut = makeSut(signUpSpy: { signUpViewModel = $0 })
         sut.saveButton?.simulateTap()
@@ -40,6 +40,7 @@ extension SignUpViewControllerTests {
         let sut = SignUpViewController.instantiate()
         sut.signUp = signUpSpy
         sut.loadViewIfNeeded()
+        checkMemoryLeak(for: sut)
         return sut
     }
 }

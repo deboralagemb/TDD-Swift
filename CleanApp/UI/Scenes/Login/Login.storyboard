@@ -39,17 +39,17 @@
                                 <color key="textColor" red="0.33725490196078434" green="0.0" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IM3-kH-fDf" userLabel="EmailTextField" customClass="RoundedTextField" customModule="UI" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IM3-kH-fDf" userLabel="EmailTextField" customClass="RoundedTextField" customModule="UI" customModuleProvider="target">
                                 <rect key="frame" x="32" y="310" width="350" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yxT-gd-dKl" userLabel="PasswordTextField" customClass="RoundedTextField" customModule="UI" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yxT-gd-dKl" userLabel="PasswordTextField" customClass="RoundedTextField" customModule="UI" customModuleProvider="target">
                                 <rect key="frame" x="32" y="360" width="350" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMf-Ol-t0p">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMf-Ol-t0p">
                                 <rect key="frame" x="32" y="426" width="350" height="60"/>
                                 <color key="backgroundColor" red="0.53333333333333333" green="0.054901960784313725" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -71,6 +71,8 @@
                         <constraints>
                             <constraint firstItem="yxT-gd-dKl" firstAttribute="height" secondItem="IM3-kH-fDf" secondAttribute="height" id="DSQ-f4-bfc"/>
                             <constraint firstItem="BMf-Ol-t0p" firstAttribute="top" secondItem="yxT-gd-dKl" secondAttribute="bottom" constant="32" id="FQh-sh-HZB"/>
+                            <constraint firstItem="BMf-Ol-t0p" firstAttribute="trailing" secondItem="IM3-kH-fDf" secondAttribute="trailing" id="I1L-98-n2e"/>
+                            <constraint firstItem="IM3-kH-fDf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="P2w-gO-ZAo"/>
                             <constraint firstItem="dWa-va-gy8" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="QBn-DR-LR0"/>
                             <constraint firstItem="yxT-gd-dKl" firstAttribute="trailing" secondItem="IM3-kH-fDf" secondAttribute="trailing" id="ReB-9G-2BK"/>
                             <constraint firstItem="ZNk-U5-lSU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Wgr-ZK-RNz"/>
@@ -78,15 +80,19 @@
                             <constraint firstItem="H7a-kz-gsP" firstAttribute="top" secondItem="BMf-Ol-t0p" secondAttribute="bottom" constant="16" id="XUG-UH-aO7"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZNk-U5-lSU" secondAttribute="trailing" id="YWW-x3-Wxh"/>
                             <constraint firstItem="IM3-kH-fDf" firstAttribute="top" secondItem="dWa-va-gy8" secondAttribute="bottom" constant="16" id="abQ-tv-RcZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IM3-kH-fDf" secondAttribute="trailing" constant="32" id="cC9-WM-OuF"/>
                             <constraint firstItem="H7a-kz-gsP" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="goO-1a-wT7"/>
                             <constraint firstItem="yxT-gd-dKl" firstAttribute="leading" secondItem="IM3-kH-fDf" secondAttribute="leading" id="hBZ-T6-Gge"/>
+                            <constraint firstItem="BMf-Ol-t0p" firstAttribute="leading" secondItem="IM3-kH-fDf" secondAttribute="leading" id="ht6-Ho-cF3"/>
                             <constraint firstItem="dWa-va-gy8" firstAttribute="top" secondItem="ZNk-U5-lSU" secondAttribute="bottom" constant="24" id="kjl-50-6ul"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="ZNk-U5-lSU" secondAttribute="top" id="pXV-hE-7H0"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="IM3-kH-fDf" id="yi1-M7-5mD"/>
                         <outlet property="loadingIndicator" destination="H7a-kz-gsP" id="rkL-Rr-kCt"/>
                         <outlet property="loginButton" destination="BMf-Ol-t0p" id="f30-c3-83d"/>
+                        <outlet property="passwordTextField" destination="yxT-gd-dKl" id="86S-Sd-2lC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
