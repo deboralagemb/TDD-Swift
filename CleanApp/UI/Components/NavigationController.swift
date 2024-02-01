@@ -31,13 +31,20 @@ public final class NavigationController: UINavigationController {
         navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         navigationBar.isTranslucent = false
         navigationBar.barStyle = .black
+        
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        navBarAppearance.backgroundColor = Color.primaryDark
+        navigationBar.standardAppearance = navBarAppearance
+        navigationBar.scrollEdgeAppearance = navBarAppearance
     }
     
-    public func setRootViewController(_ viewControler: UIViewController) {
-        setViewControllers([viewControler], animated: true)
-        currentViewController = viewControler
+    public func setRootViewController(_ viewController: UIViewController) {
+        setViewControllers([viewController], animated: true)
+        currentViewController = viewController
         hideBackButtonText()
-        viewControler.navigationItem.backBarButtonItem = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
+        viewController.navigationItem.backBarButtonItem = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
     }
     
     public func hideBackButtonText() {
